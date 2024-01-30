@@ -1,0 +1,109 @@
+diff -urN neofetch-7.1.0/debian/patches/01-add-gardenlinux-logo ./debian/patches/01-add-gardenlinux-logo
+--- neofetch-7.1.0/debian/patches/01-add-gardenlinux-logo	1970-01-01 01:00:00.000000000 +0100
++++ ./debian/patches/01-add-gardenlinux-logo	2023-12-04 09:45:26.000000000 +0100
+@@ -0,0 +1,99 @@
++Description: 01-add-gardenlinux-logo
++--- neofetch-7.1.0.orig/neofetch
+++++ neofetch-7.1.0/neofetch
++@@ -6552,35 +6552,72 @@ EOF
++         "debian_small")
++             set_colors 1 7 3
++             read -rd '' ascii_data <<'EOF'
++-${c1}  _____
++- /  __ \\
++-|  /    |
++-|  \\___-
++--_
++-  --_
+++${c1}
+++    Garden Linux
+++                   ..                   
+++              :^^^::::^^^.              
+++            .JJ!~~~~~~~~!J?             
+++           .BB?!~~7??J????BY            
+++           5@B~^^:7PP7~^~J#@~           
+++           #@#~^^~GBB7^^^7&@P           
+++          7@@@G~~!!!~:~~?#@@@7          
+++       .!YGB&P^ :~777!:  :5&#GY~.       
+++     :?GBGGPGPYJ7!7??!!7?J5GPGB#G7.     
+++    !GB5JPGGGGGGGP5YY5PGGGGGGG5?PBG~    
+++    :^.  5GGGGGGGP?::!5PGGGGGG?  .^.    
+++         ^5GGGGGGGPJ?YPPGGGGG5.         
+++          :J777????????J??77J:          
+++        .!~^^^^~!77!!77!~^^^^~!:        
+++       .~7!!!!!!777??777!!!!!!7~.       
+++        .....::::::::::::::..... 
++ EOF
++         ;;
++ 
++         "Debian"*)
++             set_colors 1 7 3
++             read -rd '' ascii_data <<'EOF'
++-${c2}       _,met$$$$$gg.
++-    ,g$$$$$$$$$$$$$$$P.
++-  ,g$$P"     """Y$$.".
++- ,$$P'              `$$$.
++-',$$P       ,ggs.     `$$b:
++-`d$$'     ,$P"'   ${c1}.${c2}    $$$
++- $$P      d$'     ${c1},${c2}    $$P
++- $$:      $$.   ${c1}-${c2}    ,d$$'
++- $$;      Y$b._   _,d$P'
++- Y$$.    ${c1}`.${c2}`"Y$$$$P"'
++-${c2} `$$b      ${c1}"-.__
++-${c2}  `Y$$
++-   `Y$$.
++-     `$$b.
++-       `Y$$b.
++-          `"Y$b._
++-              `"""
+++${c2}       
+++    Garden Linux
+++                   ..                   
+++              :^^^::::^^^.              
+++            .JJ!~~~~~~~~!J?             
+++           .BB?!~~7??J????BY            
+++           5@B~^^:7PP7~^~J#@~           
+++           #@#~^^~GBB7^^^7&@P           
+++          7@@@G~~!!!~:~~?#@@@7          
+++       .!YGB&P^ :~777!:  :5&#GY~.       
+++     :?GBGGPGPYJ7!7??!!7?J5GPGB#G7.     
+++    !GB5JPGGGGGGGP5YY5PGGGGGGG5?PBG~    
+++    :^.  5GGGGGGGP?::!5PGGGGGG?  .^.    
+++         ^5GGGGGGGPJ?YPPGGGGG5.         
+++          :J777????????J??77J:          
+++        .!~^^^^~!77!!77!~^^^^~!:        
+++       .~7!!!!!!777??777!!!!!!7~.       
+++        .....::::::::::::::..... 
+++EOF
+++        ;;
+++
+++        "GardenLinux"*)
+++            set_colors 1 7 3
+++            read -rd '' ascii_data <<'EOF'
+++${c2}       
+++    Garden Linux
+++                   ..                   
+++              :^^^::::^^^.              
+++            .JJ!~~~~~~~~!J?             
+++           .BB?!~~7??J????BY            
+++           5@B~^^:7PP7~^~J#@~           
+++           #@#~^^~GBB7^^^7&@P           
+++          7@@@G~~!!!~:~~?#@@@7          
+++       .!YGB&P^ :~777!:  :5&#GY~.       
+++     :?GBGGPGPYJ7!7??!!7?J5GPGB#G7.     
+++    !GB5JPGGGGGGGP5YY5PGGGGGGG5?PBG~    
+++    :^.  5GGGGGGGP?::!5PGGGGGG?  .^.    
+++         ^5GGGGGGGPJ?YPPGGGGG5.         
+++          :J777????????J??77J:          
+++        .!~^^^^~!77!!77!~^^^^~!:        
+++       .~7!!!!!!777??777!!!!!!7~.       
+++        .....::::::::::::::..... 
++ EOF
++         ;;
++ 
+diff -urN neofetch-7.1.0/debian/patches/series ./debian/patches/series
+--- neofetch-7.1.0/debian/patches/series	2022-04-18 10:27:53.000000000 +0200
++++ ./debian/patches/series	2023-12-04 09:44:56.000000000 +0100
+@@ -1 +1,2 @@
+ 0001-Change-shebang-to-bin-bash-Closes-984433.patch
++01-add-gardenlinux-logo
